@@ -1,0 +1,26 @@
+package selfprogramming;
+import java.util.Scanner;
+public class Q1 {
+
+	public static void main(String[] args) 
+	{
+		double amount;
+		double balance = 600;
+		final double over = 100;
+		
+		Scanner in = new Scanner (System.in);
+		
+		System.out.print("Enter amount: ");
+		amount = in.nextDouble();
+		
+		if (amount <= balance)
+			balance = balance - amount;
+		else
+			balance = balance - over;
+		
+		System.out.print(balance);
+		
+
+	}
+
+}
